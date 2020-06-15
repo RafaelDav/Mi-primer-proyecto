@@ -71,6 +71,7 @@ h1{
   font-family: sans-serif;
   font-size: 47px;
   line-height: 72px;
+  text-align: center;
 }
 h4{
   box-sizing: border-box;
@@ -83,6 +84,7 @@ h4{
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 30px;
+  text-align: center;
 }
 form{
   box-sizing: border-box;
@@ -242,4 +244,34 @@ input{
 .features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+@media (max-width: 575px){
+  .navbar,.actions {
+  display: none;
+    }
+    .header{
+      margin: 20px 20px 0;
+    }
+    .main h1, h4{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .capterra >*{
+      width: 100%;
+    }
+    .promo{
+      display:grid;
+      grid-template-columns:1fr;
+      width: 70%;
+      margin: 100px auto;
+      text-align: center;
+    }
+    .explanatory-video > video {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+ 
+    }
 }
